@@ -549,7 +549,7 @@ a:focus {
 .why_section .box .img-box img {
   width: 100%; /* Ensure the image fills the width of its container */
   height: auto; /* Maintain aspect ratio */
-  max-width: 150px; /* Set a max-width to control the image size */
+  max-width: 850px; /* Set a max-width to control the image size */
   border-radius: 0; /* Remove any border-radius (circular shape) */
 }
 
