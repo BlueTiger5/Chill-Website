@@ -5,17 +5,6 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
-.img-box {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.img-box img {
-  width: 100%;
-  height: auto;
-}
-
 
 .layout_padding {
   padding: 90px 0;
