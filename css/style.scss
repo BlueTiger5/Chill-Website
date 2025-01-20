@@ -495,20 +495,20 @@ a:focus {
 
     .img-box {
       margin-bottom: 20px;
-      width: 120px;
-      height: 120px;
-      min-width: 120px;
-      min-height: 120px;
-      border-radius: 100%;
-      border: 5px solid $primary2;
+      width: 800;  // Adjust width to be responsive
+      height: 800; // Adjust height to maintain aspect ratio
+      min-width: unset; // Remove minimum width constraint
+      min-height: unset; // Remove minimum height constraint
+      border-radius: 0; // Remove circular shape
+      border: none; // Remove the border
       display: flex;
       justify-content: center;
       align-items: center;
 
       img {
-        width: 55px;
-        height: auto;
-        fill: $primary2;
+        width: 100%; // Ensure the image scales correctly within the box
+        height: auto; // Maintain aspect ratio of the image
+        fill: unset; // Remove fill property (it may not be needed for your image)
       }
     }
 
@@ -532,6 +532,7 @@ a:focus {
     }
   }
 }
+
 
 // end why section
 
