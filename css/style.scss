@@ -556,20 +556,21 @@ a:focus {
       overflow: hidden;
       transition: all .1s;
       margin-top: 45px;
-      // background-color: #053068;
-      background: linear-gradient(to bottom, lighten($color: $primary2, $amount: 3), lighten($color: $primary2, $amount: 5));
+      background: linear-gradient(to bottom, lighten($primary2, 3%), lighten($primary2, 5%));
 
       .img-box {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: auto; // Adjust to make it responsive
+        height: auto; // Maintain aspect ratio
 
         img {
-          width: 120px;
-          border-radius: 100%;
-          border: 5px solid $white;
+          width: 100%; // Make image take up full width of container
+          height: auto; // Maintain aspect ratio
+          border-radius: 0; // Remove circular border-radius
+          border: none; // Remove border if it exists
         }
-
       }
 
       .detail-box {
@@ -580,7 +581,6 @@ a:focus {
           font-weight: 600;
           position: relative;
         }
-
       }
 
       .social_box {
@@ -599,9 +599,8 @@ a:focus {
       }
     }
   }
-
-
 }
+
 
 /*team section end*/
 
