@@ -527,42 +527,30 @@ a:focus {
 
 .why_section .box {
   margin-top: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .why_section .box .img-box {
   margin-bottom: 20px;
-  width: 120px;
-  height: 120px;
-  min-width: 120px;
-  min-height: 120px;
-  border-radius: 100%;
-  border: 5px solid #00204a;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: auto; /* Allow the container to grow based on the image size */
+  height: auto; /* Allow the container to grow based on the image size */
+  min-width: unset; /* Remove minimum width constraint */
+  min-height: unset; /* Remove minimum height constraint */
+  border-radius: 0; /* Remove circular border-radius */
+  border: none; /* Remove the border */
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .why_section .box .img-box img {
-  width: 55px;
-  height: auto;
-  fill: #00204a;
+  width: 100%; /* Ensure the image fills the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; /* Set a max-width to control the image size */
+  border-radius: 0; /* Remove any border-radius (circular shape) */
 }
 
 .why_section .box h5 {
@@ -575,12 +563,8 @@ a:focus {
 }
 
 .why_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -590,7 +574,6 @@ a:focus {
   background-color: #00bbf0;
   color: #ffffff;
   border-radius: 0;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
 }
@@ -598,6 +581,7 @@ a:focus {
 .why_section .btn-box a:hover {
   background-color: #007fa4;
 }
+
 
 /*team section */
 .team_section {
